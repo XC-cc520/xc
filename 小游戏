@@ -19,6 +19,10 @@ print(a)
 
 for a in range(1,101):
     if a % 7 == 0 or a % 10 == 7 or a // 10 == 7:
+        continue
+    else:
+        print(a)
+ 
 '''  
  7 的倍数，可以理解为除以 7 余数为 0 的数；
    a % 7 == 0
@@ -28,7 +32,3 @@ for a in range(1,101):
    十位上是 7 的数，即除以 10 取整数为 7 的数。
    a // 10 == 7
 '''
-        continue
-    else:
-        print(a)
- 
